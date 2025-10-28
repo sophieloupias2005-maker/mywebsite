@@ -1,0 +1,62 @@
+.Nepal {
+  font-family: Vidaloka;
+  font-size: 50px;
+  color: rgb(251, 246, 209);
+  margin-left: 20px;
+}
+
+.text {
+  font-family: syne;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgb(102, 0, 0);
+  margin-left: 30px;
+  width: 800px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.picture {
+  display:inline-block;
+  margin-left: 50px;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+.Nepal0 {
+  height: 400px;
+  width: 450px;
+  object-fit: scale-down;
+}
+
+.Nepal1,.Nepal2,.Nepal3 {
+  height: 300px;
+  width: 350px;
+  object-fit: scale-down;
+}
+
+.Nepal-1,.Nepal-2,.Nepal-3 {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-right: 90px;
+}
+
+.Nepal-4,.Nepal-5,.Nepal-6 {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-right: 90px;
+}
+
+.Nepal4,.Nepal5 {
+  height: 300px;
+  width: 350px;
+  object-fit: scale-down;
+}
+
+.Nepal6 {
+  height: 350px;
+  width: 300px;
+  object-fit: scale-down;
+}

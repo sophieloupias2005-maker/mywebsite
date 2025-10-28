@@ -1,0 +1,55 @@
+.My-professional-aspirations {
+  font-family: Vidaloka;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(102, 0, 0);
+  margin-left: 30px;
+}
+
+.description {
+  font-family: vidaloka;
+  font-size: 17px;
+  color: rgb(102, 0, 0);
+  font-weight:lighter;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+.projects-button {
+  font-family: syne;
+   font-size: 15px;
+   color: rgb(102, 0, 0);
+   background-color: rgb(251, 246, 209); 
+   padding: 7px 11px 7px 11px;
+   border: none;
+   border-radius: 4px;
+   width: 150px;
+   transition: opacity 0.15s, box-shadow 0.15s;
+   text-align: center;
+}
+
+.projects-button:hover {
+   box-shadow: 0.1px 0.2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 30px;
+  font-family: Syne;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(102, 0, 0);
+}
+
+.text {
+  font-family: syne;
+  font-size: 25px;
+  line-height: 30px;
+  color:rgb(102, 0, 0);
+}
+
+.short-term,.long-term {
+  font-family: syne;
+  font-size: 28px;
+  font-weight:bold;
+  color:rgb(102, 0, 0);
+}

@@ -1,0 +1,148 @@
+.Art {
+  font-family: Vidaloka;
+  font-size: 50px;
+  color: rgb(251, 246, 209);
+  margin-left: 20px;
+}
+
+.details{
+  position: relative;
+}
+
+.title {
+  font-size: 30px;
+  font-family: Syne;
+  font-weight: bold;
+  margin-left: 30px;
+  color: rgb(102, 0, 0);
+}
+
+.art7 {
+  width: 500px;
+  height: 550px;
+  object-fit: scale-down;
+}
+
+.intro-pic {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.intro {
+  font-family: syne;
+  font-size: 35px;
+  line-height: 40px;
+  width: 700px; 
+  color: rgb(102, 0, 0);
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.header {
+  font-family: syne;
+  font-size: 40px;
+  font-weight:bolder;
+  color: rgb(102, 0, 0);
+  margin-left: 20px;
+  background-color:rgb(251, 246, 209);
+  padding: 10px 10px 10px 10px;
+  margin-top: 130px;
+}
+
+.text {
+  font-family: syne;
+  font-size: 30px;
+  line-height: 40px;
+  color: rgb(102, 0, 0);
+  margin-left: 30px;
+  width: 800px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.buttons {
+  font-family: syne;
+  font-size: 20px;
+  color: rgb(102, 0, 0);
+  background-color: rgb(251, 246, 209); 
+  padding: 7px 25px 7px 25px;
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  transition: opacity 0.15s, box-shadow 0.15s, cursor 0.15s;
+  text-align: center;
+}
+
+.buttons:hover {
+   box-shadow: 0.1px 0.2px 10px rgba(0, 0, 0, 0.6);
+   opacity: 0.5;
+   cursor: pointer;
+}
+.menu{
+  transition: cursor 0.15s, opacity 0.15s;
+  vertical-align: text-bottom;
+}
+
+.menu:hover{
+  opacity:0.5;
+  cursor: pointer;
+}
+
+.original-1,.original-2,.original-3,.original-4 {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.original1,.original2,.original3,.original4 {
+  height: 300px;
+  width: 250px;
+  object-fit: scale-down;
+  text-align: center;
+}
+
+.button {
+  font-family: syne;
+  font-weight: bold;
+  font-size: 20px;
+  color:rgb(102, 0, 0);
+  text-align: center;
+  background-color: rgb(251, 246, 209);
+  border: none;
+  border-radius: 8px;
+  padding: 7px 11px 7px 11px;
+}
+
+
+.famous1 {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.replica-1 {
+  height: 300 px;
+  width: 250px;
+  object-fit: scale-down;
+}
+
+.replica1 {
+  text-align:center;
+}
+
+.skeleton {
+  text-align: center;
+}
+
+
+.art1,.art2,.art3,.art4,.art5,.art6,.art8 {
+  height: 300px;
+  width: 250px;
+  object-fit: scale-down;
+}
+
+.art-1,.art-2,.art-3,.art-4,.art-5,.art-6,.art-8 {
+  display: inline-block;
+  vertical-align: top;
+}

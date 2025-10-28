@@ -1,0 +1,85 @@
+.My-background {
+  font-family: Vidaloka;
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(102, 0, 0);
+  margin-left: 30px;
+}
+
+.description {
+  font-family: vidaloka;
+  font-size: 17px;
+  color: rgb(102, 0, 0);
+  font-weight:lighter;
+  margin-top: -40px;
+  margin-left: 40px;
+}
+
+.intro {
+  font-family: syne;
+  font-size: 30px;
+  color: rgb(102, 0, 0);
+
+}
+.introduction {
+  line-height: 40px;
+  width: 700px;
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: bottom;
+
+}
+.babysophie {
+  width: 480px;
+  height: 430px;
+  object-fit: scale-down;
+}
+
+.baby-sophie {
+  display: inline-block;
+  margin-left: 80px;
+}
+
+
+.title {
+  font-size: 30px;
+  font-family: Syne;
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(102, 0, 0);
+}
+
+.studies-US, .studies-FR {
+  font-family: syne;
+  font-size: 25px;
+  color: rgb(102, 0, 0);
+  line-height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+ 
+
+.art-pic, .band-pic, .volley-pic {
+  width: 350px;
+  height: 300px;
+  object-fit: scale-down;
+}
+
+.artpic {
+  margin-left: 100px;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.bandpic {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.volleypic {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: inline-block;
+} 

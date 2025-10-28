@@ -1,0 +1,113 @@
+.website-intro{
+    font-family: syne;
+    font-size: 15px;
+    line-height: 20px;
+    width: 140px;
+    margin-left: 30px;
+    color: rgb(251, 246, 209); 
+    vertical-align: top;
+    display:inline-block;
+ } 
+
+ .title{
+    font-size: 60px;
+    text-align: center;
+    font-family: Vidaloka;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: rgb(251, 246, 209); 
+ }
+
+.sophie {
+   object-fit: scale-down;
+   width: 490px;
+   height: 590px;
+   margin-top: 50px;
+   display: inline-block;
+   vertical-align: text-top;
+ 
+}
+
+.intro {
+   font-family: syne;
+   font-size: 35px;
+   color: rgb(102, 0, 0);
+   width: 800px;
+   margin-top: 50px;
+   margin-left: 50px;
+   display:inline-block;
+   vertical-align: text-top;
+}
+
+.background, .life, .aspirations {
+   font-family: syne;
+   font-size: 25px;
+   margin-top: 20px;
+   color: rgb(102, 0, 0);
+   background-color: rgb(251, 246, 209);
+   margin-left: 20px;
+   padding: 7px 11px 7px 11px;
+   border: none;
+   border-radius: 4px;
+   transition: opacity 0.15s, box-shadow 0.15s;
+   position: center;
+}
+
+.background:hover, .life:hover, .aspirations:hover {
+   box-shadow: 0.1px 0.2px 10px rgba(0, 0, 0, 0.6); 
+   opacity: 0.8;
+   cursor: pointer;
+ }
+
+ .background:active, .life:active, .aspirations:active {
+   opacity:0.5;
+ }
+
+
+ .useful-links {
+    font-family: syne;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 200px;
+    color: rgb(102, 0, 0);
+    margin-left: 20px;
+ }
+
+ .linkedIn, .resume, .elevator {
+   margin-top: 10px;
+   margin-right: 100px;
+   margin-left: 100px;
+   display: inline-block;
+   vertical-align: top;
+ }
+
+
+.LinkedIn, .Resume, .Elevator {
+   font-family: syne;
+   font-size: 15px;
+   color: rgb(102, 0, 0);
+   background-color: rgb(251, 246, 209); 
+   padding: 7px 11px 7px 11px;
+   border: none;
+   border-radius: 4px;
+   width: 150px;
+   transition: opacity 0.15s, box-shadow 0.15s;
+   text-align: center;
+ }
+
+ .LinkedIn:hover, .Resume:hover, .Elevator:hover {
+   box-shadow: 0.1px 0.2px 10px rgba(0, 0, 0, 0.6); 
+   opacity: 0.8;
+   cursor: pointer;
+ }
+
+.linkedIn-logo, .resume-logo, .elevator-pitch-logo {
+   width: 80px;
+   height: 75px;
+   border-width:2px;
+   margin-left: 30px;
+   text-align: center;
+
+}
