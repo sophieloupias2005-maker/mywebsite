@@ -1,5 +1,5 @@
 .My-background {
-  font-family: Vidaloka;
+  font-family: Playfair display;
   font-size: 50px;
   font-weight: bold;
   color: rgb(102, 0, 0);
@@ -7,7 +7,7 @@
 }
 
 .description {
-  font-family: vidaloka;
+  font-family: Playfair display;
   font-size: 17px;
   color: rgb(102, 0, 0);
   font-weight:lighter;
@@ -16,7 +16,7 @@
 }
 
 .intro {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 30px;
   color: rgb(102, 0, 0);
 
@@ -50,7 +50,7 @@
 }
 
 .studies-US, .studies-FR {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 25px;
   color: rgb(102, 0, 0);
   line-height: 30px;
