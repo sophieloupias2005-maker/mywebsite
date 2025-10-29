@@ -1,5 +1,5 @@
 .Art {
-  font-family: Vidaloka;
+  font-family: Playfair display;
   font-size: 50px;
   color: rgb(251, 246, 209);
   margin-left: 20px;
@@ -11,7 +11,7 @@
 
 .title {
   font-size: 30px;
-  font-family: Syne;
+  font-family: Montserrat;
   font-weight: bold;
   margin-left: 30px;
   color: rgb(102, 0, 0);
@@ -29,7 +29,7 @@
 }
 
 .intro {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 35px;
   line-height: 40px;
   width: 700px; 
@@ -40,7 +40,7 @@
 }
 
 .header {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 40px;
   font-weight:bolder;
   color: rgb(102, 0, 0);
@@ -51,7 +51,7 @@
 }
 
 .text {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 30px;
   line-height: 40px;
   color: rgb(102, 0, 0);
@@ -62,7 +62,7 @@
 }
 
 .buttons {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 20px;
   color: rgb(102, 0, 0);
   background-color: rgb(251, 246, 209); 
@@ -104,7 +104,7 @@
 }
 
 .button {
-  font-family: syne;
+  font-family: Montserrat;
   font-weight: bold;
   font-size: 20px;
   color:rgb(102, 0, 0);
