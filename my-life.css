@@ -1,5 +1,5 @@
 .My-life {
-  font-family: Vidaloka;
+  font-family: Playfair display;
   font-size: 50px;
   font-weight: bold;
   color: rgb(102, 0, 0);
@@ -7,7 +7,7 @@
 }
 
 .description {
-  font-family: vidaloka;
+  font-family: Playfair display;
   font-size: 17px;
   color: rgb(102, 0, 0);
   font-weight:lighter;
@@ -16,7 +16,7 @@
 }
 
 .button {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 25px;
   color: rgb(102, 0, 0);
   background-color: rgb(251, 246, 209); 
@@ -34,14 +34,14 @@
 
 .title {
   font-size: 30px;
-  font-family: Syne;
+  font-family: Montserrat;
   font-weight: bold;
   margin-left: 20px;
   color: rgb(102, 0, 0);
 }
 
 .text {
-  font-family: syne;
+  font-family: Montserrat;
   font-size: 25px;
   line-height: 30px;
   color:rgb(102, 0, 0);
