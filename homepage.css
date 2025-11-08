@@ -36,7 +36,12 @@
     width: max-content;
     margin-bottom: 40px;
     color: rgb(251, 246, 209);
-  
+ }
+
+ .body-1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
  }
 
 .sophie {
@@ -107,6 +112,11 @@
    opacity:0.5;
  }
 
+ .links {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
 
  .useful-links {
     font-family: montserrat;
