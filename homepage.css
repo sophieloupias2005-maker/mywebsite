@@ -15,7 +15,6 @@
     margin-left: 30px;
  }
 
-
  .menu {
    transition: cursor 0.15s opacity 0.15s;
  }
@@ -24,7 +23,6 @@
    cursor: pointer;
    opacity: 0.7;
  }
-
 
  .title{
     font-size: 60px;
@@ -150,6 +148,4 @@
    width: 80px;
    height: 75px;
    border-width:2px;
-   text-align: center;
-
 }
