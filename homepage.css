@@ -115,6 +115,9 @@
    justify-content: space-evenly;
    align-items: center;
  }
+.linkedIn,.resume,.elevator {
+    text-align: center;
+}
 
  .useful-links {
     font-family: montserrat;
@@ -135,7 +138,6 @@
    border-radius: 4px;
    width: 150px;
    transition: opacity 0.15s, box-shadow 0.15s;
-   text-align: center;
  }
 
  .LinkedIn:hover, .Resume:hover, .Elevator:hover {
