@@ -1,77 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head> 
-    <title>Sophie Loupias projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Syne:wght@400..800&family=Vidaloka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="my-projects.css"> 
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie Loupias | Projects</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@400;600;700;800&family=Syne:wght@400..800&family=Vidaloka&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="my-projects.css">
+</head>
+<body>
 
-  <body>
-    <div style="background-color:rgb(251, 246, 209); width: 1450px; height: 200px; padding-top:2px;">
-      <p class="My-projects">
-        My projects
-      </p>
+  <!-- Top Header Navigation with Integrated Page Description -->
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="top-row">
+        <a href="homepage.html" class="brand-link">
+          <div class="brand">
+            <div class="brand-name">Sophie Loupias</div>
+            <div class="brand-title">Engineering Student</div>
+          </div>
+        </a>
+        
+        <nav class="nav-links">
+          <a href="homepage.html"><button class="nav-btn">Home</button></a>
+          <a href="my-career.html"><button class="nav-btn">Career</button></a>
+          <a href="my-projects.html"><button class="nav-btn active-nav">Projects</button></a>
+          <a href="my-activities.html"><button class="nav-btn">Activities</button></a>
+          <a href="my-background.html"><button class="nav-btn">Background</button></a>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <div style="margin-bottom:10px;">
-      <div class="title">
-        <p>
-          My current projects
+   <!-- Header Title & Description -->
+      <div class="header-banner">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-description">
+          A showcase of my engineering research, technical endeavors, and personal coding projects.
         </p>
       </div>
 
-      <div class="text" style="margin-left: 10px;">
-        <div>
-          <p>
-            My website!
-          </p>
-        </div>
-        <div>
-          <p>
-             This website has been my project for some time now. 
-             I have been teaching myself html and css code in order to code this website from scratch.
-          </p>
-        </div>
-      </div>
-    </div>
+  <!-- Main Content Area -->
+  <main class="content-container">
 
-    <div style="margin-bottom:10px;">
-      <div class="title">
-        <p>
-          My previous projects
+    <section class="info-card">
+      <h2 class="section-heading"></i>Personal Portfolio Website</h2>
+      <div class="project-block">
+        <p class="body-text">
+          This website has been a project in the works for a while now. I began by teaching myself basic HTML and CSS through online tutorials and I learned how to use web hosting services. 
+          Through a lot of trial and error, I was able to create a website that I am quite proud of. I hope to develop and refine these skills as well as venture into the world of JavaScript. 
         </p>
       </div>
+    </section>
 
-      <div class="text" style="margin-left: 10px;">
-        <div>
-          <p>
-            TIPE (travaux d'initiative personnelle encadrés):
-          </p>
-        </div>
-        <div>
-          <p>
-            As part of the entrance exams for engineering school we were required to solve a problem on the topic of environmental transition, conversion and transformation. 
-            Alongside two of my classmates we decided to tackle problems relating to solar panels, particularly how to optimise their power production. 
-            The solution we chose was a maximum power point tracking algorithm which overrides external factors such as temperature, irradiance and orientation to at the point of maximum power output. 
-          </p>
-        </div>
-        <div>
-          <p>
-            Click here to view the full project:
-          </p>
-          <a href="Présentation TIPE personnelle.pdf">
-            <button class="button">
-              MPPT algorithm
-            </button>
-           </a>
+    <section class="info-card">
+      <h2 class="section-heading"></i>Maximum Power Point Tracking (MPPT) Algorithm</h2>
+
+      <div class="project-block"> 
+        <p class="project-tagline"><em>Travaux d'Initiative Personnelle Encadrés (Interdisciplinary Personal Initiative Project)</em></p>
+        
+        <p class="body-text">
+          As part of the entrance exams for French engineering schools, we were required to research and solve a technical problem on the topic of environmental transition, energy conversion, and transformation.
+        </p>
+        <p class="body-text">
+          Alongside two classmates, I chose to tackle optimization in solar energy—specifically how to maximize the power output of photovoltaic solar panels. 
+          We developed a Maximum Power Point Tracking (MPPT) algorithm that dynamically adjusts operating points despite variable external factors such as temperature, solar irradiance, and panel orientation.
+          We then tested our algorithm by creating a real life model using Matlab and Solidworks. Once the model was tested and the algorithm was validated, we implemented the algorithm into an arduino UNO card. 
+          We connected our circuit to our solar pannel to test the MPPT algorithm in real life under real conditions. 
+        </p>
+
+        <div class="btn-wrapper">
+          <p class="btn-label">View the full project presentation:</p>
+          <a href="Présentation TIPE personnelle.pdf">
+            <button class="action-btn"></i> MPPT Algorithm Presentation</button>
+          </a>
         </div>
       </div>
-      
-    </div>
+    </section>
 
-  </body>
+  </main>
+
+</body>
+</html>
