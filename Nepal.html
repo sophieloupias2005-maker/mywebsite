@@ -1,71 +1,115 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title> Sophie Loupias Nepal </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Syne:wght@400..800&family=Vidaloka&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Nepal.css"> 
-  </head>
-
-
-  <body>
-
-    <div style="background-color: rgb(102, 0, 0); width: 1500px; height: 200px; padding-top:2px;">
-      <p class="Nepal">
-        Nepal
-      </p>
-    </div>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie Loupias | Nepal Mission</title>
   
-    <div>
-      <div class="text">
-         <p>
-          I had the privilege to go to Nepal with a group of volunteers after the devastating earthquake they had in 2015 
-          as a member of the group had a family member living there. 
-          During this trip I got to immerse myself fully in the Nepalese culture, discover new foods, religious beliefs, values… 
-          Our mission however was to serve the community as best we could&#8212; through donations, helping rebuild, serving food and bringing supplies for children&#39;s entertainment. 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@400;600;700;800&family=Syne:wght@400..800&family=Vidaloka&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="Nepal.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation with Page Description -->
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="top-row">
+        <a href="homepage.html" class="brand-link">
+          <div class="brand">
+            <div class="brand-name">Sophie Loupias</div>
+            <div class="brand-title">Engineering Student</div>
+          </div>
+        </a>
+        
+        <nav class="nav-links">
+          <a href="homepage.html"><button class="nav-btn">Home</button></a>
+          <a href="my-career.html"><button class="nav-btn">Career</button></a>
+          <a href="my-projects.html"><button class="nav-btn">Projects</button></a>
+          <a href="civic-engagement.html"><button class="nav-btn">Engagement</button></a>
+          <a href="my-activities.html"><button class="nav-btn active-nav">Activities</button></a>
+          <a href="international.html"><button class="nav-btn">Background</button></a>
+          <a href="my-background.html"><button class="nav-btn">Background</button></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+   <!-- Header Title & Description -->
+      <div class="header-banner">
+        <h1 class="page-title">Nepal Volunteer Mission</h1>
+        <p class="page-description">
+          A humanitarian journey dedicated to community support, cultural immersion, and earthquake relief effort in Nepal.
         </p>
       </div>
-      <div class="picture">
-        <img class="Nepal0" src="Nepal0.JPG">
-      </div>
+
+  <!-- Main Content Area -->
+  <main class="content-container">
+
+    <!-- Back to Activities Button -->
+    <div class="back-link-wrapper">
+      <a href="my-activities.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i> Back to Activities
+      </a>
     </div>
 
-
-    <div class="pictures-1">
-      <div class="Nepal-1">
-        <img class="Nepal1" src="Nepal1.JPG">
+    <!-- Main Story Card -->
+    <section class="info-card flex-section">
+      <div class="story-text">
+        <h2 class="section-heading"></i> Service &amp; Cultural Immersion</h2>
+        <p class="body-text">
+          I had the privilege to go to Nepal with a group of volunteers following the devastating 2015 earthquake, as a member of our team had family living in the region.
+        </p>
+        <p class="body-text">
+          During this trip, I got to immerse myself fully in Nepalese culture—discovering new foods, religious traditions, and deeply inspiring community values. 
+        </p>
+        <p class="body-text">
+          Our primary mission was to serve the community as best we could through distributing essential donations, helping rebuild local infrastructure, serving food, and bringing supplies and entertainment for children.
+        </p>
+        <p class="body-text">
+          My fondest memory from the trip was volunteering at a Nepalese school. I had noticed that the boys and girls were separated by gender- the girls were doing arts and crafts with some volunteers while the boys were all 
+          playing soccer. I decided to join in on the soccer game and agreed to play goalie as no one else was willing to play that position. It ended up being a blast, just experiencing the pure joy of school recess soccer. 
+        </p>
       </div>
-      <div class="Nepal-2">
-        <img class="Nepal2" src="Nepal2.JPG">
+      <div class="featured-img-wrapper">
+        <img class="featured-img" src="Nepal0.JPG" alt="Nepal Volunteer Mission Main Photo">
       </div>
-      <div class="Nepal-3">
-        <img class="Nepal3" src="Nepal3.JPG">
+    </section>
+
+    <!-- Photo Gallery Card -->
+    <section class="info-card">
+      <h2 class="section-heading"></i> Mission Memories</h2>
+      
+      <div class="photo-grid">
+        <div class="gallery-item">
+          <img src="Nepal1.JPG" alt="Nepal Memory 1">
+        </div>
+        <div class="gallery-item">
+          <img src="Nepal2.JPG" alt="Nepal Memory 2">
+        </div>
+        <div class="gallery-item">
+          <img src="Nepal3.JPG" alt="Nepal Memory 3">
+        </div>
+        <div class="gallery-item">
+          <img src="Nepal4.JPG" alt="Nepal Memory 4">
+        </div>
+        <div class="gallery-item">
+          <img src="Nepal6.JPG" alt="Nepal Memory 5">
+        </div>
+        <div class="gallery-item">
+          <img src="Nepal5.JPG" alt="Nepal Memory 6">
+        </div>
       </div>
-    </div>
-  
-    <div class="picture-2">
-       <div class="Nepal-4">
-        <img class="Nepal4" src="Nepal4.JPG">
-      </div>
-      <div class="Nepal-6">
-        <img class="Nepal6" src="Nepal6.JPG">
-      </div>
-      <div class="Nepal-5">
-        <img class="Nepal5" src="Nepal5.JPG">
-      </div>
+    </section>
 
+  </main>
 
-
-
-    </div>
-
-
-
-  </body>
-
+</body>
 </html>
