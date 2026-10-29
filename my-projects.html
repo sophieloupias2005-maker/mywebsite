@@ -35,7 +35,7 @@
           <a href="my-projects.html"><button class="nav-btn active-nav">Projects</button></a>
           <a href="civic-engagement.html"><button class="nav-btn">Engagement</button></a>
           <a href="my-activities.html"><button class="nav-btn">Activities</button></a>
-          <a href="international.html"><button class="nav-btn">Background</button></a>
+          <a href="international.html"><button class="nav-btn">International</button></a>
           <a href="my-background.html"><button class="nav-btn">Background</button></a>
         </nav>
       </div>
@@ -54,11 +54,29 @@
   <main class="content-container">
 
     <section class="info-card">
-      <h2 class="section-heading"></i>Personal Portfolio Website</h2>
-      <div class="project-block">
+      <h2 class="section-heading">Embedded Systems &amp; Robotics Project: Mobile Robot</h2>
+
+      <div class="project-block"> 
+        <p class="project-tagline"><em>Toulouse INP-ENSEEIHT | Department of Electronics, Electrical Energy &amp; Automation (EEEA) 2025-2026</em></p>
+        
         <p class="body-text">
-          This website has been a project in the works for a while now. I began by teaching myself basic HTML and CSS through online tutorials and I learned how to use web hosting services. 
-          Through a lot of trial and error, I was able to create a website that I am quite proud of. I hope to develop and refine these skills as well as venture into the world of JavaScript. 
+          Designed, configured, and programmed a 4-wheel drive mobile robot based on an Altera Cyclone V FPGA board (DE1-SoC) running an embedded 32-bit Softcore Nios II processor. Developed both hardware-level address decoding and software architecture in C across polling, periodic interrupt, and asynchronous event-driven paradigms.
+        </p>
+        
+        <p class="body-text">
+          <strong>Hardware Architecture &amp; Memory Mapping:</strong> Designed and implemented full memory address decoding for custom peripheral interfaces over a 64-byte I/O space split into 8 distinct zones. Integrated hardware memory-mapped registers for 7-segment displays, LED status indicators, switches, DC motor controllers, optical line tracking sensors, and ultrasonic distance sensors. Verified memory access cycles, control signals, and chip-select timing using a digital storage oscilloscope.
+        </p>
+
+        <p class="body-text">
+          <strong>Low-Level Firmware &amp; Control Algorithms (C / Nios II HAL):</strong> Implemented full manual joystick control with directional motor driving algorithms (PWM-like pulse control) and optical line-following logic in polling mode. Built multi-tasking execution pipelines using dual hardware timers (<code>TIMER_0</code> and <code>TIMER_1</code>) with preemption control to enforce task priorities. Designed edge detectors using D flip-flops in VHDL/Quartus for asynchronous joystick input and ultrasonic obstacle threshold triggers (&lt; 20 cm).
+        </p>
+
+        <p class="body-text">
+          <strong>Autonomous Navigation &amp; Safety Integration:</strong> Programmed real-time active safety loops using 3 ultrasonic distance sensors (Center, Left, Right) to trigger immediate stopping or reverse overrides when obstacles fall within critical thresholds. Developed state-machine routines for line-tracking navigation and follower/slave vehicle modes.
+        </p>
+
+        <p class="body-text">
+          <strong>Tools &amp; Technologies Used:</strong> Altera Cyclone V (DE1-SoC Board), Nios II Softcore Microprocessor (32-bit), VHDL, Quartus Prime 17.1, Nios II Eclipse IDE, C programming language, Ultrasonic Sensors (SRF05), Optical Trackers, H-Bridge DC Motor Controllers, 7-Segment Displays, and Oscilloscope.
         </p>
       </div>
     </section>
@@ -67,7 +85,7 @@
       <h2 class="section-heading"></i>Maximum Power Point Tracking (MPPT) Algorithm</h2>
 
       <div class="project-block"> 
-        <p class="project-tagline"><em>Travaux d'Initiative Personnelle Encadrés (Interdisciplinary Personal Initiative Project)</em></p>
+        <p class="project-tagline"><em>Travaux d'Initiative Personnelle Encadrés (Interdisciplinary Personal Initiative Project) 2024-2025</em></p>
         
         <p class="body-text">
           As part of the entrance exams for French engineering schools, we were required to research and solve a technical problem on the topic of environmental transition, energy conversion, and transformation.
@@ -87,6 +105,48 @@
         </div>
       </div>
     </section>
+
+<section class="info-card">
+      <h2 class="section-heading"> Solar Charging Station &amp; MPPT PCB Project</h2>
+
+      <div class="project-block"> 
+        <p class="project-tagline"><em>Power Electronics &amp; Hardware System Design (In Progress)</em></p>
+        
+        <p class="body-text">
+          Building upon my previous research on Maximum Power Point Tracking (MPPT), I am currently designing an autonomous solar charging station tailored for mobile phones and small electronic appliances. 
+        </p>
+        <p class="body-text">
+          To validate system behavior under dynamic real-world conditions, I first modeled the entire energy conversion chain in MATLAB/Simulink. The model integrates a photovoltaic solar panel, an optimized MPPT algorithm, a DC-DC buck converter, protective circuitry, and a battery stage emulating the load of the target device.
+        </p>
+        <p class="body-text">
+          Following complete numerical simulation and accurate component dimensioning, the next phase involves transferring the schematic to KiCad to design and layout a custom Printed Circuit Board (PCB). Through this hands-on project, I am strengthening my competencies in circuit design, PCB routing, power conversion, and physical prototype assembly before performing final experimental tests with an active solar panel.
+        </p>
+      </div>
+    </section>
+
+
+
+    <section class="info-card">
+      <h2 class="section-heading"> Personal Portfolio Website</h2>
+      <div class="project-block">
+        <p class="project-tagline"><em>Frontend Development &amp; Personal Branding 2026</em></p>
+        
+        <p class="body-text">
+          Designed and developed from scratch, this personal portfolio serves as a centralized digital showcase for my engineering coursework, technical projects, international mobility plans, and civic engagements. 
+        </p>
+        <p class="body-text">
+          Built using semantic HTML5, modern CSS3 (incorporating custom properties/variables for dynamic styling), and responsive media queries to ensure seamless cross-device compatibility. This project allowed me to bridge the gap between technical web development principles and professional self-marketing.
+        </p>
+        <p class="body-text">
+          Looking ahead, I plan to integrate interactive JavaScript features, expand my version control workflows using GitHub, and continuously iterate on the user experience.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
 
   </main>
 
