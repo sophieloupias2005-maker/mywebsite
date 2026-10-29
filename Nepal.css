@@ -1,62 +1,273 @@
-.Nepal {
-  font-family: Playfair display;
-  font-size: 50px;
-  color: rgb(251, 246, 209);
-  margin-left: 20px;
+/* Color Palette */
+:root {
+  --bg-pink: #f7d6e0;        /* Pastel Light Pink */
+  --card-bg: #fff0f3;       /* Soft Pink-White for Cards */
+  --text-dark: #5c0606;      /* Deep Maroon/Burgundy for Text */
+  --btn-yellow: #fdf0d5;     /* Warm Soft Yellow */
+  --btn-yellow-hover: #fadb5f; /* Vibrant Yellow Hover */
+  --shadow: rgba(92, 6, 6, 0.12);
 }
 
-.text {
-  font-family: Montserrat;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-pink);
+  color: var(--text-dark);
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header & Navigation Bar */
+.navbar {
+  width: 100%;
+  background-color: rgba(247, 214, 224, 0.95);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid rgba(92, 6, 6, 0.12);
+}
+
+.nav-content {
+  width: 92%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+}
+
+.brand-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-dark);
+  opacity: 0.8;
+  margin-top: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  background-color: var(--btn-yellow);
+  border: 1.5px solid rgba(92, 6, 6, 0.15);
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.nav-btn:hover, .active-nav {
+  background-color: var(--btn-yellow-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(92, 6, 6, 0.2);
+}
+
+/* Integrated Header Banner Styling */
+.header-banner {
+  padding-top: 24px;
+  margin-top: 8px;
+  border-top: 1px solid rgba(92, 6, 6, 0.08);
+  text-align: center;
+}
+
+.page-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: var(--text-dark);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.page-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  opacity: 0.9;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Main Layout & Cards */
+.content-container {
+  width: 92%;
+  max-width: 1600px;
+  margin: 20px auto 60px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.back-link-wrapper {
+  margin-bottom: 6px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-decoration: none;
+  background-color: var(--btn-yellow);
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(92, 6, 6, 0.15);
+  transition: all 0.25s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--btn-yellow-hover);
+  transform: translateX(-3px);
+}
+
+.info-card {
+  background-color: var(--card-bg);
+  padding: 45px 50px;
+  border-radius: 28px;
+  box-shadow: 0 12px 30px var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.flex-section {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.story-text {
+  flex: 1;
+}
+
+.section-heading {
+  font-family: 'Raleway', sans-serif;
   font-size: 30px;
-  line-height: 40px;
-  color: rgb(102, 0, 0);
-  margin-left: 30px;
-  width: 800px;
-  display: inline-block;
-  vertical-align: top;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.picture {
-  display:inline-block;
-  margin-left: 50px;
-  margin-right: 20px;
-  vertical-align: top;
+.body-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 16px;
 }
 
-.Nepal0 {
-  height: 400px;
-  width: 450px;
-  object-fit: scale-down;
+.body-text:last-child {
+  margin-bottom: 0;
 }
 
-.Nepal1,.Nepal2,.Nepal3 {
-  height: 300px;
-  width: 350px;
-  object-fit: scale-down;
+.featured-img-wrapper {
+  flex-shrink: 0;
 }
 
-.Nepal-1,.Nepal-2,.Nepal-3 {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 30px;
-  margin-right: 90px;
+.featured-img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 4px solid var(--btn-yellow);
+  box-shadow: 0 8px 20px var(--shadow);
 }
 
-.Nepal-4,.Nepal-5,.Nepal-6 {
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 30px;
-  margin-right: 90px;
+/* Photo Gallery Grid */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
 }
 
-.Nepal4,.Nepal5 {
-  height: 300px;
-  width: 350px;
-  object-fit: scale-down;
+.gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid var(--btn-yellow);
+  box-shadow: 0 6px 16px var(--shadow);
+  transition: transform 0.25s ease;
 }
 
-.Nepal6 {
-  height: 350px;
-  width: 300px;
-  object-fit: scale-down;
+.gallery-item img:hover {
+  transform: translateY(-4px);
+}
+
+/* Responsive Layout */
+@media (max-width: 950px) {
+  .flex-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
 }
