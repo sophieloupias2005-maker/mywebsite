@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie Loupias | Projects</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@400;600;700;800&family=Syne:wght@400..800&family=Vidaloka&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="my-projects.css">
+</head>
+<body>
+
+  <!-- Top Header Navigation with Integrated Page Description -->
+  <header class="navbar">
+    <div class="nav-content">
+      <div class="top-row">
+        <a href="homepage.html" class="brand-link">
+          <div class="brand">
+            <div class="brand-name">Sophie Loupias</div>
+            <div class="brand-title">Engineering Student</div>
+          </div>
+        </a>
+        
+        <nav class="nav-links">
+          <a href="homepage.html"><button class="nav-btn">Home</button></a>
+          <a href="my-career.html"><button class="nav-btn">Career</button></a>
+          <a href="my-projects.html"><button class="nav-btn active-nav">Projects</button></a>
+          <a href="civic-engagement.html"><button class="nav-btn">Engagement</button></a>
+          <a href="my-activities.html"><button class="nav-btn">Activities</button></a>
+          <a href="international.html"><button class="nav-btn">International</button></a>
+          <a href="my-background.html"><button class="nav-btn">Background</button></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+   <!-- Header Title & Description -->
+      <div class="header-banner">
+        <h1 class="page-title">My Projects</h1>
+        <p class="page-description">
+          A showcase of my engineering research, technical endeavors, and personal coding projects.
+        </p>
+      </div>
+
+  <!-- Main Content Area -->
+  <main class="content-container">
+
+    <!-- PROJECT 1 WITH 3-PHOTO STAGGERED COLUMN COLLAGE -->
+    <section class="info-card card-with-image">
+      <div class="card-content-wrapper">
+        <h2 class="section-heading">Embedded Systems &amp; Robotics Project: Mobile Robot</h2>
+
+        <div class="project-block"> 
+          <p class="project-tagline"><em>Toulouse INP-ENSEEIHT | Department of Electronics, Electrical Energy &amp; Automation (EEEA) 2025-2026</em></p>
+          
+          <p class="body-text">
+            Designed, configured, and programmed a 4-wheel drive mobile robot based on an Altera Cyclone V FPGA board (DE1-SoC) running an embedded 32-bit Softcore Nios II processor. Developed both hardware-level address decoding and software architecture in C across polling, periodic interrupt, and asynchronous event-driven paradigms.
+          </p>
+          
+          <p class="body-text">
+            <strong>Hardware Architecture &amp; Memory Mapping:</strong> Designed and implemented full memory address decoding for custom peripheral interfaces over a 64-byte I/O space split into 8 distinct zones. Integrated hardware memory-mapped registers for 7-segment displays, LED status indicators, switches, DC motor controllers, optical line tracking sensors, and ultrasonic distance sensors. Verified memory access cycles, control signals, and chip-select timing using a digital storage oscilloscope.
+          </p>
+
+          <p class="body-text">
+            <strong>Low-Level Firmware &amp; Control Algorithms (C / Nios II HAL):</strong> Implemented full manual joystick control with directional motor driving algorithms (PWM-like pulse control) and optical line-following logic in polling mode. Built multi-tasking execution pipelines using dual hardware timers (<code>TIMER_0</code> and <code>TIMER_1</code>) with preemption control to enforce task priorities. Designed edge detectors using D flip-flops in VHDL/Quartus for asynchronous joystick input and ultrasonic obstacle threshold triggers (&lt; 20 cm).
+          </p>
+
+          <p class="body-text">
+            <strong>Autonomous Navigation &amp; Safety Integration:</strong> Programmed real-time active safety loops using 3 ultrasonic distance sensors (Center, Left, Right) to trigger immediate stopping or reverse overrides when obstacles fall within critical thresholds. Developed state-machine routines for line-tracking navigation and follower/slave vehicle modes.
+          </p>
+
+          <p class="body-text">
+            <strong>Tools &amp; Technologies Used:</strong> Altera Cyclone V (DE1-SoC Board), Nios II Softcore Microprocessor (32-bit), VHDL, Quartus Prime 17.1, Nios II Eclipse IDE, C programming language, Ultrasonic Sensors (SRF05), Optical Trackers, H-Bridge DC Motor Controllers, 7-Segment Displays, and Oscilloscope.
+          </p>
+          <div class="btn-wrapper">
+            <p class="btn-label">View the project report:</p>
+            <a href="Rapport_Robot.pdf">
+              <button class="action-btn">Mobile robot project</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THREE-PHOTO CONTAINER -->
+      <div class="card-images-collage collage-3-photos">
+        <img src="fpga.png" alt="Project photo 1" class="collage-img img-top">
+        <img src="oscillo.png" alt="Project photo 2" class="collage-img img-middle">
+        <img src="robot.png" alt="Project photo 3" class="collage-img img-bottom">
+      </div>
+    </section>
+
+    <!-- PROJECT 2 WITH 3-PHOTO STAGGERED COLUMN COLLAGE -->
+    <section class="info-card card-with-image">
+      <div class="card-content-wrapper">
+        <h2 class="section-heading">Maximum Power Point Tracking (MPPT) Algorithm</h2>
+
+        <div class="project-block"> 
+          <p class="project-tagline"><em>Travaux d'Initiative Personnelle Encadrés (Interdisciplinary Personal Initiative Project) 2024-2025</em></p>
+          
+          <p class="body-text">
+            As part of the entrance exams for French engineering schools, we were required to research and solve a technical problem on the topic of environmental transition, energy conversion, and transformation.
+          </p>
+          <p class="body-text">
+            Alongside two classmates, I chose to tackle optimization in solar energy—specifically how to maximize the power output of photovoltaic solar panels. 
+            We developed a Maximum Power Point Tracking (MPPT) algorithm that dynamically adjusts operating points despite variable external factors such as temperature, solar irradiance, and panel orientation.
+            We then tested our algorithm by creating a real life model using Matlab and Solidworks. Once the model was tested and the algorithm was validated, we implemented the algorithm into an arduino UNO card. 
+            We connected our circuit to our solar pannel to test the MPPT algorithm in real life under real conditions. 
+          </p>
+
+          <div class="btn-wrapper">
+            <p class="btn-label">View the full project presentation:</p>
+            <a href="Présentation TIPE personnelle.pdf">
+              <button class="action-btn">MPPT Algorithm Presentation</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- TWO-PHOTO CONTAINER -->
+      <div class="card-images-collage">
+        <img src="Arduino.png" alt="MPPT project photo 1" class="collage-img img-top-right">
+        <img src="Solar_panel.png" alt="MPPT project photo 2" class="collage-img img-bottom-left">
+      </div>
+    </section>
+
+    <!-- PROJECT 3 -->
+    <section class="info-card">
+      <h2 class="section-heading">Solar Charging Station &amp; MPPT PCB Project</h2>
+
+      <div class="project-block"> 
+        <p class="project-tagline"><em>Power Electronics &amp; Hardware System Design (In Progress)</em></p>
+        
+        <p class="body-text">
+          Building upon my previous research on Maximum Power Point Tracking (MPPT), I am currently designing an autonomous solar charging station tailored for mobile phones and small electronic appliances. 
+        </p>
+        <p class="body-text">
+          To validate system behavior under dynamic real-world conditions, I first modeled the entire energy conversion chain in MATLAB/Simulink. The model integrates a photovoltaic solar panel, an optimized MPPT algorithm, a DC-DC buck converter, protective circuitry, and a battery stage emulating the load of the target device.
+        </p>
+        <p class="body-text">
+          Following complete numerical simulation and accurate component dimensioning, the next phase involves transferring the schematic to KiCad to design and layout a custom Printed Circuit Board (PCB). Through this hands-on project, I am strengthening my competencies in circuit design, PCB routing, power conversion, and physical prototype assembly before performing final experimental tests with an active solar panel.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT 4 -->
+    <section class="info-card">
+      <h2 class="section-heading">Personal Portfolio Website</h2>
+      <div class="project-block">
+        <p class="project-tagline"><em>Frontend Development &amp; Personal Branding 2026</em></p>
+        
+        <p class="body-text">
+          Designed and developed from scratch, this personal portfolio serves as a centralized digital showcase for my engineering coursework, technical projects, international mobility plans, and civic engagements. 
+        </p>
+        <p class="body-text">
+          Built using semantic HTML5, modern CSS3 (incorporating custom properties/variables for dynamic styling), and responsive media queries to ensure seamless cross-device compatibility. This project allowed me to bridge the gap between technical web development principles and professional self-marketing.
+        </p>
+        <p class="body-text">
+          Looking ahead, I plan to integrate interactive JavaScript features, expand my version control workflows using GitHub, and continuously iterate on the user experience.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
